@@ -1,30 +1,41 @@
 # KanoJoes
 
-**Scroll-stopping short-form videos for brands, creators, and families.**
+**Wholesome videos and stories for families and children — created as a family hobby.**
 
-Christian / faith-friendly content • Homeschool-friendly • Fun for all ages.
+Clean, educational, uplifting short-form content rooted in Christian values and morality. Safe, fun, and made with love.
 
-## Sites
-- **Main Site**: [kanojoes.com](https://kanojoes.com)
-- **KanoJoes Jr** (Kids content): [kanojoes.com/jr](https://kanojoes.com/jr)
+## Our Sites
 
-## About Us
-KanoJoes creates high-quality, engaging short videos optimized for TikTok, Instagram Reels, YouTube Shorts, and more. 
+- **Main Site** — [k anojoes.com](https://k anojoes.com)  
+  Family-friendly stories, uplifting music & songs, and wholesome entertainment for all ages.
 
-Part of the Simkins family projects — combining creativity, faith, and fun.
+- **KanoJoes Jr** — [k anojoes.com/jr](https://k anojoes.com/jr)  
+  Fun, colorful, and educational AI-powered videos made just for kids. Positive messages and simple lessons in every adventure.
 
-## Content Pillars
-- Teen / Young Adult stories
-- Family & homeschool videos
-- KanoJoes Jr (safe, colorful kids content)
-- Spoken Devotion (coming soon)
+## About KanoJoes
 
-## Tech Stack
-- GitHub Pages
-- Tailwind CSS
-- Font Awesome
-- Custom branding
+KanoJoes is a family project dedicated to creating high-quality, wholesome short videos and stories. We focus on content that educates, entertains, and gently shares moral lessons and Christian values in an engaging, age-appropriate way.
 
-## Development
-```bash
-# Just edit the HTML files directly in GitHub or locally
+Everything we make is:
+- Clean and family-friendly
+- Educational and uplifting
+- Rooted in kindness, courage, honesty, and faith
+- Designed for homeschool families and anyone seeking positive screen time
+
+We use AI tools creatively as part of our hobby — never outsourcing — to bring stories and visuals to life in a way that blesses children and families.
+
+## Watch on YouTube
+
+Our latest videos are on YouTube:
+
+**KanoJoes Jr Channel**  
+https://www.youtube.com/@KanoJoes_Jr
+
+## Contact
+
+For questions, collaboration ideas, or just to say hello:  
+**ruby@spokendevotion.com**
+
+---
+
+© 2026 KanoJoes • Family-created wholesome content for kids and families. All glory to God.

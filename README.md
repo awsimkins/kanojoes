@@ -1,10 +1,30 @@
+# KanoJoes
 
----
+**Scroll-stopping short-form videos for brands, creators, and families.**
 
-**Upload this README.md**, commit it.
+Christian / faith-friendly content • Homeschool-friendly • Fun for all ages.
 
-**Next?** Reply “next” for any additional files (e.g. a simple `_config.yml` if you want Jekyll later, or spokendevotion placeholder).
+## Sites
+- **Main Site**: [kanojoes.com](https://kanojoes.com)
+- **KanoJoes Jr** (Kids content): [kanojoes.com/jr](https://kanojoes.com/jr)
 
-Once these are up, update your DNS at Namecheap and let me know the results so we can tweak anything (logo, colors, more pages, etc.). 
+## About Us
+KanoJoes creates high-quality, engaging short videos optimized for TikTok, Instagram Reels, YouTube Shorts, and more. 
 
-You're almost there — the site will look clean and professional!
+Part of the Simkins family projects — combining creativity, faith, and fun.
+
+## Content Pillars
+- Teen / Young Adult stories
+- Family & homeschool videos
+- KanoJoes Jr (safe, colorful kids content)
+- Spoken Devotion (coming soon)
+
+## Tech Stack
+- GitHub Pages
+- Tailwind CSS
+- Font Awesome
+- Custom branding
+
+## Development
+```bash
+# Just edit the HTML files directly in GitHub or locally

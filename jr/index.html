@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanoJoes Jr • Fun Videos for Kids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        body { font-family: 'Poppins', system_ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', 'Poppins', system_ui, sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+        .modern-btn { transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+        .modern-btn:hover { transform: scale(1.05); }
+        .jr-bg { background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 40%, #eab308 100%); }
+    </style>
+</head>
+<body class="bg-sky-950 text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-sky-950/90 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <span class="font-semibold text-3xl tracking-tighter">KanoJoes</span>
+                <span class="px-3 py-1 text-xs font-bold bg-yellow-400 text-sky-950 rounded-2xl">JR</span>
+            </div>
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="../" class="hover:text-white transition-colors">← Back to Main</a>
+            </div>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                    class="px-7 py-2.5 bg-white text-sky-950 font-semibold text-sm rounded-3xl hover:bg-white/90 transition-all">
+                Get Notified
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="min-h-screen pt-20 flex items-center jr-bg relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <div class="flex justify-center mb-8">
+                <div class="text-[100px] md:text-[130px] font-black tracking-tighter heading-font text-white drop-shadow-lg">KanoJoes Jr</div>
+            </div>
+            <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter heading-font leading-none mb-6">
+                Super fun videos<br>made just for kids!
+            </h1>
+            <p class="max-w-xl mx-auto text-2xl text-white/90 mb-10">
+                Safe, colorful, and educational adventures.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-10 py-4 bg-white text-sky-950 font-semibold rounded-3xl text-lg modern-btn">
+                    Join the Fun!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- What We Do -->
+    <div id="what" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-6xl font-semibold tracking-tight">Videos made with smiles.</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="mx-auto w-20 h-20 rounded-3xl bg-gradient-to-br from-yellow-400 to-orange-400 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-magic text-4xl text-sky-950"></i>
+                </div>
+                <h3 class="font-semibold text-2xl mb-4">Fun & Colorful</h3>
+                <p class="text-white/80">Bright stories kids will watch again and again.</p>
+            </div>
+            <div class="text-center">
+                <div class="mx-auto w-20 h-20 rounded-3xl bg-gradient-to-br from-green-400 to-cyan-400 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-shield-halved text-4xl text-sky-950"></i>
+                </div>
+                <h3 class="font-semibold text-2xl mb-4">Safe & Friendly</h3>
+                <p class="text-white/80">100% kid-safe with positive messages.</p>
+            </div>
+            <div class="text-center">
+                <div class="mx-auto w-20 h-20 rounded-3xl bg-gradient-to-br from-pink-400 to-purple-400 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-graduation-cap text-4xl text-sky-950"></i>
+                </div>
+                <h3 class="font-semibold text-2xl mb-4">Learn & Play</h3>
+                <p class="text-white/80">Fun adventures with simple lessons.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="max-w-lg mx-auto px-6 py-24 text-center">
+        <h2 class="text-4xl font-semibold tracking-tight mb-4">Want to be the first to see new videos?</h2>
+        <p class="text-xl text-white/80 mb-10">Join the KanoJoes Jr crew!</p>
+        <form onsubmit="handleSubmit(event)" class="space-y-4">
+            <input type="email" placeholder="Your Email" required class="w-full bg-white/10 border border-white/20 px-6 py-4 rounded-3xl text-white placeholder:text-white/50">
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-sky-950 font-semibold rounded-3xl text-lg modern-btn">
+                Notify Me
+            </button>
+        </form>
+    </div>
+
+    <footer class="py-10 text-center text-sm text-white/50">
+        © 2026 KanoJoes Jr • Safe fun for kids
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! You'll be notified when new videos drop.");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

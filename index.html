@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KanoJoes • Wholesome Family Videos & Stories</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Wholesome, family-friendly stories, uplifting music and adventures — created as a family hobby and rooted in Christian values.">
+    <meta name="theme-color" content="#09090b">
+    <link rel="canonical" href="https://kanojoes.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KanoJoes">
+    <meta property="og:title" content="KanoJoes • Wholesome Family Videos & Stories">
+    <meta property="og:description" content="Wholesome, family-friendly stories, uplifting music and adventures — created as a family hobby and rooted in Christian values.">
+    <meta property="og:url" content="https://kanojoes.com/">
+    <meta property="og:image" content="https://kanojoes.com/logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="KanoJoes • Wholesome Family Videos & Stories">
+    <meta name="twitter:description" content="Wholesome, family-friendly stories, uplifting music and adventures — created as a family hobby and rooted in Christian values.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/tailwind.min.css?v=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
-        body { font-family: 'Poppins', system_ui, sans-serif; }
-        .heading-font { font-family: 'Space Grotesk', 'Poppins', system_ui, sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+        body { font-family: 'Poppins', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', 'Poppins', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.03em; }
         .modern-btn { transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); }
         .modern-btn:hover { transform: scale(1.05); }
         .warm-bg { background: linear-gradient(135deg, #4c1d95 0%, #7e22ce 40%, #9f1239 100%); }
@@ -19,19 +32,31 @@
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/90 backdrop-blur-xl border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-x-4">
-                <img src="logo.png" alt="KanoJoes" class="h-12 w-auto">
+            <a href="./" class="flex items-center gap-x-4" aria-label="KanoJoes home">
+                <img src="logo.png" alt="" class="h-12 w-auto">
                 <span class="font-semibold text-3xl tracking-tighter heading-font">KanoJoes</span>
-            </div>
+            </a>
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                 <a href="#what" class="hover:text-pink-400 transition-colors">What We Create</a>
-                <a href="#youtube" class="hover:text-pink-400 transition-colors">Watch on YouTube</a>
+                <a href="#youtube" class="hover:text-pink-400 transition-colors">YouTube</a>
                 <a href="#values" class="hover:text-pink-400 transition-colors">Our Values</a>
                 <a href="jr/" class="hover:text-yellow-400 transition-colors font-semibold">KanoJoes Jr</a>
             </div>
-            <a href="#contact" class="px-7 py-2.5 bg-white text-zinc-950 font-semibold text-sm rounded-3xl hover:bg-white/90 transition-all modern-btn">
+            <a href="#contact" class="hidden sm:inline-block px-7 py-2.5 bg-white text-zinc-950 font-semibold text-sm rounded-3xl hover:bg-white/90 transition-all modern-btn">
                 Contact Us
             </a>
+            <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-white" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/10">
+            <div class="px-6 py-4 flex flex-col gap-y-4 text-base font-medium">
+                <a href="#what" class="hover:text-yellow-400 transition-colors">What We Create</a>
+                <a href="#youtube" class="hover:text-yellow-400 transition-colors">YouTube</a>
+                <a href="#values" class="hover:text-yellow-400 transition-colors">Our Values</a>
+                <a href="jr/" class="hover:text-yellow-400 transition-colors">KanoJoes Jr</a>
+                <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact Us</a>
+            </div>
         </div>
     </nav>
 
@@ -92,12 +117,12 @@
     <div id="youtube" class="bg-zinc-900 py-20 border-y border-white/10">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-semibold tracking-tight mb-8">Watch on YouTube</h2>
-            <p class="max-w-md mx-auto text-white/70 mb-10">Our latest wholesome videos and adventures — subscribe for new releases!</p>
-            <a href="https://www.youtube.com/@KanoJoes_Jr" target="_blank" 
-               class="inline-flex items-center gap-x-3 px-8 py-4 bg-red-600 hover:bg-red-700 rounded-3xl text-lg font-semibold modern-btn">
-                <i class="fa-brands fa-youtube text-3xl"></i>
-                KanoJoes Jr Channel
-            </a>
+            <p class="max-w-md mx-auto text-white/70 mb-10">Wholesome videos and adventures for the whole family.</p>
+            <div class="inline-flex flex-col items-center gap-y-3 px-8 py-6 bg-white/10 border border-white/20 rounded-3xl max-w-md mx-auto" role="note">
+                <i class="fa-brands fa-youtube text-4xl text-red-500" aria-hidden="true"></i>
+                <span class="text-2xl font-semibold heading-font">Coming soon</span>
+                <span class="text-white/80">Our YouTube channel is getting ready. New videos will be shared here as soon as they go live!</span>
+            </div>
         </div>
     </div>
 
@@ -124,5 +149,24 @@
     <footer class="py-10 text-center text-sm text-white/50">
         © 2026 KanoJoes • Family hobby creating wholesome, educational content rooted in Christian values
     </footer>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (!btn || !menu) return;
+            function setOpen(open) {
+                menu.classList.toggle('hidden', !open);
+                btn.setAttribute('aria-expanded', String(open));
+                btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+                btn.querySelector('i').className = (open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars') + ' text-2xl';
+            }
+            btn.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
+            menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !menu.classList.contains('hidden')) { setOpen(false); btn.focus(); }
+            });
+        })();
+    </script>
 </body>
 </html>
